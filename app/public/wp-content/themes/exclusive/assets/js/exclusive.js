@@ -1,5 +1,31 @@
+// below listed default settings
+AOS.init({
+    // Global settings:
+    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+    initClassName: 'aos-init', // class applied after initialization
+    animatedClassName: 'aos-animate', // class applied on animation
+    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    offset: 120, // offset (in px) from the original trigger point
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 800, // values from 0 to 3000, with step 50ms
+    easing: 'ease', // default easing for AOS animations
+    once: false, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+
 // When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+window.onscroll = function () {
+    myFunction()
+};
 
 // Get the navbar
 var navbar = document.getElementById("navbar");
@@ -27,182 +53,21 @@ function toggleNav() {
 
 /* Open the sidenav */
 function openNav() {
+
     document.getElementById("sidenav").style.width = "80%";
     document.getElementById("body").style.marginLeft = "-100px";
     document.getElementById("body").style.marginRight = "100px";
-    // Logo animation
-    document.getElementById("sidenav-logo").classList.remove('fadeOut');
-    document.getElementById("sidenav-logo").classList.add('fadeIn');
     // Set button indicator
     document.getElementById("show-side-nav-btn").classList.add('is-active');
+
+
 }
 
-/* Close/hide the sidenav */
 function closeNav() {
+    /* Close/hide the sidenav */
     document.getElementById("sidenav").style.width = "0";
     document.getElementById("body").style.marginLeft = "0";
     document.getElementById("body").style.marginRight = "0";
-    // Logo animation
-    document.getElementById("sidenav-logo").classList.remove('fadeIn');
-    document.getElementById("sidenav-logo").classList.add('fadeOut');
     // Set button indicator
     document.getElementById("show-side-nav-btn").classList.remove('is-active');
 }
-
-var WhenInViewport = window.WhenInViewport;
-
-// slideInLeft
-var slideInLeft = Array.prototype.slice.call(
-    document.getElementsByClassName('initSlideInLeft')
-);
-
-slideInLeft.forEach(function (element) {
-    new WhenInViewport(element, function (elementInViewport) {
-        elementInViewport.classList.add('animated');
-        elementInViewport.classList.add('slideInLeft');
-    });
-});
-
-// slideInRight
-var slideInRight = Array.prototype.slice.call(
-    document.getElementsByClassName('initSlideInRight')
-);
-
-slideInRight.forEach(function (element) {
-    new WhenInViewport(element, function (elementInViewport) {
-        elementInViewport.classList.add('animated');
-        elementInViewport.classList.add('slideInRight');
-    });
-});
-
-// slideOutLeft
-var slideOutLeft = Array.prototype.slice.call(
-    document.getElementsByClassName('initSlideOutLeft')
-);
-
-slideOutLeft.forEach(function (element) {
-    new WhenInViewport(element, function (elementInViewport) {
-        elementInViewport.classList.add('animated');
-        elementInViewport.classList.add('slideOutLeft');
-    });
-});
-
-// fadeInLeft
-var fadeInLeft = Array.prototype.slice.call(
-    document.getElementsByClassName('initFadeInLeft')
-);
-
-fadeInLeft.forEach(function (element) {
-    new WhenInViewport(element, function (elementInViewport) {
-        elementInViewport.classList.add('animated');
-        elementInViewport.classList.add('fadeInLeft');
-    });
-});
-
-// fadeOutLeft
-var fadeOutLeft = Array.prototype.slice.call(
-    document.getElementsByClassName('initFadeOutLeft')
-);
-
-fadeOutLeft.forEach(function (element) {
-    new WhenInViewport(element, function (elementInViewport) {
-        elementInViewport.classList.add('animated');
-        elementInViewport.classList.add('fadeOutLeft');
-    });
-});
-
-// fadeInRight
-var fadeInRight = Array.prototype.slice.call(
-    document.getElementsByClassName('initFadeInRight')
-);
-
-fadeInRight.forEach(function (element) {
-    new WhenInViewport(element, function (elementInViewport) {
-        elementInViewport.classList.add('animated');
-        elementInViewport.classList.add('fadeInRight');
-    });
-});
-
-// fadeInDown
-var fadeInDown = Array.prototype.slice.call(
-    document.getElementsByClassName('initFadeInDown')
-);
-
-fadeInDown.forEach(function (element) {
-    new WhenInViewport(element, function (elementInViewport) {
-        elementInViewport.classList.add('animated');
-        elementInViewport.classList.add('fadeInDown');
-    });
-});
-
-// fadeIn
-var fadeIn = Array.prototype.slice.call(
-    document.getElementsByClassName('initFadeIn')
-);
-
-fadeIn.forEach(function (element) {
-    new WhenInViewport(element, function (elementInViewport) {
-        elementInViewport.classList.add('animated');
-        elementInViewport.classList.add('fadeIn');
-    });
-});
-
-// fadeOut
-var fadeOut = Array.prototype.slice.call(
-    document.getElementsByClassName('initFadeOut')
-);
-
-fadeOut.forEach(function (element) {
-    new WhenInViewport(element, function (elementInViewport) {
-        elementInViewport.classList.add('animated');
-        elementInViewport.classList.add('fadeOut');
-    });
-});
-
-// fadeInUp
-var fadeInUp = Array.prototype.slice.call(
-    document.getElementsByClassName('initFadeInUp')
-);
-
-fadeInUp.forEach(function (element) {
-    new WhenInViewport(element, function (elementInViewport) {
-        elementInViewport.classList.add('animated');
-        elementInViewport.classList.add('fadeInUp');
-    });
-});
-
-// bounceInDown
-var bounceInDown = Array.prototype.slice.call(
-    document.getElementsByClassName('initBounceInDown')
-);
-
-bounceInDown.forEach(function (element) {
-    new WhenInViewport(element, function (elementInViewport) {
-        elementInViewport.classList.add('animated');
-        elementInViewport.classList.add('bounceInDown');
-    });
-});
-
-// bounceInLeft
-var bounceInLeft = Array.prototype.slice.call(
-    document.getElementsByClassName('initBounceInLeft')
-);
-
-bounceInLeft.forEach(function (element) {
-    new WhenInViewport(element, function (elementInViewport) {
-        elementInViewport.classList.add('animated');
-        elementInViewport.classList.add('bounceInLeft');
-    });
-});
-
-// bounceInRight
-var bounceInRight = Array.prototype.slice.call(
-    document.getElementsByClassName('initBounceInRight')
-);
-
-bounceInRight.forEach(function (element) {
-    new WhenInViewport(element, function (elementInViewport) {
-        elementInViewport.classList.add('animated');
-        elementInViewport.classList.add('bounceInRight');
-    });
-});

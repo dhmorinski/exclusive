@@ -182,7 +182,7 @@ function exclusive_the_main_nav_links($classes)
  */
 function exclusive_the_page_header($page_title, array $breadcrumb_links)
 {
-    $html = '<section class="page-header">
+    $html = '<section class="page-header mb-50">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12">
@@ -198,8 +198,8 @@ function exclusive_the_page_header($page_title, array $breadcrumb_links)
                     </div >
                 </div >
             </div >
-        </section >
-        <img class="page-header-shadow" src = "' . get_theme_file_uri('/assets/images/shadow-bottom.png') . '"
-             alt = "Shadow" > ';
+        </section >';
+//        <img class="page-header-shadow" src = "' . get_theme_file_uri('/assets/images/shadow-bottom.png') . '"
+//             alt = "Shadow" > ';
     echo $html;
 }

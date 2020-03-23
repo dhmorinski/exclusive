@@ -2,12 +2,12 @@
 
 get_header();
 
-while (have_posts()) {
+while (have_posts()) :
     the_post(); ?>
     <!-- PAGE HEADER AND BREADCRUMBS -->
     <?php exclusive_the_page_header(get_the_title(), [
-        'Naslovnica' => site_url()
-    ]) ?>
+    'Naslovnica' => site_url()
+]) ?>
 
     <div class="main">
         <div class="container">
@@ -22,7 +22,7 @@ while (have_posts()) {
 
             $child_pages = new WP_Query($child_pages_query_args);
 
-            while ($child_pages->have_posts()) {
+            while ($child_pages->have_posts()) :
                 $child_pages->the_post(); ?>
 
                 <div class="row">
@@ -31,7 +31,8 @@ while (have_posts()) {
                         <div><?php the_excerpt(); ?></div>
                     </div>
                 </div>
-            <?php }
+            <?php
+            endwhile;
             wp_reset_postdata(); //remember to reset data
             ?>
 
@@ -39,8 +40,8 @@ while (have_posts()) {
         </div>
     </div>
 
-    <?php
-}
+<?php
+endwhile;
 
 get_footer();
 

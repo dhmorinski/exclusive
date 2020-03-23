@@ -3,7 +3,7 @@
 get_header();
 
 
-while (have_posts()) {
+while (have_posts()) :
     the_post();
 // Custom Contact fields.
     $form_title = get_field('naslov_kontakt_forme');
@@ -28,7 +28,7 @@ while (have_posts()) {
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="text-big mb-50 initFadeIn slower">
+                        <div class="text-big mb-50" data-aos="fade-in">
                             <?php the_content(); ?>
                         </div>
                     </div>
@@ -40,45 +40,54 @@ while (have_posts()) {
         <div class="contact-block container-fluid mb-50">
             <div class="row">
 
-                <?php if (($first_action_title || $first_action_content) || ($second_action_title || $second_action_content)): ?>
+                <?php if (
+                    ($first_action_title || $first_action_content) ||
+                    ($second_action_title || $second_action_content)
+                ): ?>
 
-                    <div class="col-md-6 initSlideInLeft">
+                    <div class="col-md-4">
 
                         <!-- FIRST ACTION -->
                         <?php
                         if ($first_action_title) : ?>
-                            <h2 class="home-heading"><?= $first_action_title ?></h2>
+                            <h2 class="home-heading" data-aos="fade-right"><?= $first_action_title ?></h2>
                         <?php
                         endif;
                         if ($first_action_content) :
                             ?>
-                            <div class="home-heading-info-big">
+                            <div class="home-heading-info-big" data-aos="fade-right">
                                 <?= $first_action_content ?>
                             </div>
                         <?php
                         endif;
                         if ($first_action_nav) :
                             ?>
-                            <?php exclusive_the_nav_links($first_action_nav, 'btn btn-primary btn-lg', true, true); ?>
+                            <div data-aos="zoom-in" data-aos-delay="700">
+                                <?php exclusive_the_nav_links($first_action_nav, 'btn btn-primary', true, true); ?>
+                            </div>
                         <?php
                         endif;
                         ?>
+                    </div>
+                    <div class="col-md-4">
                         <!-- SECOND ACTION -->
                         <?php
                         if ($second_action_title) : ?>
-                            <h2 class="home-heading"><?= $second_action_title ?></h2>
+                            <h2 class="home-heading" data-aos="fade-right"><?= $second_action_title ?></h2>
                         <?php
                         endif;
                         if ($second_action_content) :
                             ?>
-                            <div class="home-heading-info-big">
+                            <div class="home-heading-info-big" data-aos="fade-right">
                                 <?= $second_action_content ?>
                             </div>
                         <?php
                         endif;
                         if ($second_action_nav) :
                             ?>
-                            <?php exclusive_the_nav_links($second_action_nav, 'btn btn-primary btn-lg', true, true); ?>
+                            <div data-aos="zoom-in" data-aos-delay="700">
+                                <?php exclusive_the_nav_links($second_action_nav, 'btn btn-primary', false, true); ?>
+                            </div>
                         <?php
                         endif;
                         ?>
@@ -90,7 +99,7 @@ while (have_posts()) {
                 if ($form_id) :
                     ?>
                     <!-- CONTACT FORM -->
-                    <div class="col-md-6 initSlideInRight">
+                    <div class="col-md-4" data-aos="fade-up-left">
                         <div class="contact-block-right contact-form-wrap">
 
                             <?php if ($form_title) : ?>
@@ -108,8 +117,8 @@ while (have_posts()) {
         </div>
     </div>
 
-    <?php
-}
+<?php
+endwhile;
 
 get_footer();
 

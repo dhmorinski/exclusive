@@ -5,7 +5,7 @@ get_header();
 ?>
 
 <?php
-while (have_posts()) {
+while (have_posts()) :
     the_post(); ?>
 
     <div class="page-banner">
@@ -31,7 +31,8 @@ while (have_posts()) {
         <?php the_content(); ?>
     </div>
 
-<?php }
+<?php
+endwhile;
 
 get_footer();
 

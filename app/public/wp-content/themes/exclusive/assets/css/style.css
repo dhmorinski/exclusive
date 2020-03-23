@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'Oswald-Regular';
     src: local('Oswald'), url('../fonts/oswald/static/Oswald-Regular.ttf');
+    font-display: swap;
 }
 
 html {
@@ -24,19 +25,7 @@ p {
 }
 
 .mb-50 {
-    margin-bottom: 50px;
-}
-
-.content-bg-grey {
-    background: #ccc;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.content-bg-white {
-    background: #fff;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    margin-bottom: 50px !important;
 }
 
 #main {
@@ -118,6 +107,11 @@ p {
 .container {
     padding-left: 50px;
     padding-right: 50px;
+}
+
+.container-fluid {
+    max-width: 1800px;
+    margin: auto;
 }
 
 .img-responsive {
@@ -298,7 +292,7 @@ form {
 .home-heading {
     font-weight: bold;
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .home-heading-info {
@@ -395,7 +389,7 @@ nav.main-nav {
     transition: .5s ease-in-out;
 }
 
-.sidenav-menu {
+.sidenav-menu-item:first-child {
     border-top: 1px solid #555;
 }
 
@@ -560,20 +554,6 @@ nav.main-nav {
     transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-/*HOME BANNER*/
-
-.banner-heading {
-    padding: 15px;
-    width: 100%;
-    overflow: hidden;
-}
-
-.banner img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-}
-
 /*HOME SERVICES*/
 .home-services {
     color: #000;
@@ -600,17 +580,20 @@ nav.main-nav {
 }
 
 /*HOME CONTACT*/
+.home-contact-block {
+    color: #000;
+    background: #ccc;
+}
+
 .contact-block a {
     margin-bottom: 30px;
     margin-right: 10px;
 }
 
-.contact-block-right {
-    background: #ccc;
-    color: #000;
+.home-contact-block .contact-block-right {
+    background: #fff;
     padding: 15px 15px 0 15px;
     border-radius: 2px;
-    box-shadow: 3px 3px 5px #999;
 }
 
 .contact-block-right h2 {
@@ -619,11 +602,6 @@ nav.main-nav {
 }
 
 /*HOME GALLERY*/
-.home-gallery {
-    color: #000;
-    background: #ccc;
-}
-
 .gallery-item {
     display: flex;
     overflow: hidden;
@@ -687,6 +665,7 @@ nav.main-nav {
 footer {
     text-align: center;
     background: #333;
+    padding-top: 50px;
 }
 
 .footer-logo {
@@ -707,6 +686,7 @@ footer {
 
 .footer-menu {
     margin-top: 10px;
+    margin-bottom: 50px;
     display: block;
 }
 

@@ -28,7 +28,7 @@ while (have_posts()) :
                 <?php if ($description) : ?>
 
                     <div class="col-md-12">
-                        <div class="text-big mb-50"><?= $description ?></div>
+                        <div class="text-big mb-50" data-aos="fade-in"><?= $description ?></div>
                     </div>
 
                 <?php
@@ -45,7 +45,7 @@ while (have_posts()) :
                             <a href="<?= $image_url ?>"
                                data-fancybox--
                                data-caption="<?= $image_title ?>"
-                               class="gallery-item initFadeIn slower">
+                               class="gallery-item" data-aos="fade-up">
                                 <img class="img-responsive"
                                      src="<?= wp_get_attachment_image_url($image_id, 'medium') ?>"
                                      srcset="<?= wp_get_attachment_image_srcset($image_id, 'medium') ?>"

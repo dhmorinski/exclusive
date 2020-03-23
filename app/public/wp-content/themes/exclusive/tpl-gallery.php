@@ -2,7 +2,7 @@
 // Template name: Galerija
 get_header();
 
-while (have_posts()) {
+while (have_posts()) :
     the_post(); ?>
 
     <div id="main">
@@ -14,7 +14,7 @@ while (have_posts()) {
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="text-big mb-50 initFadeIn slower">
+                    <div class="text-big mb-50" data-aos="fade-in">
                         <?php the_content(); ?>
                     </div>
                 </div>
@@ -26,14 +26,14 @@ while (have_posts()) {
                 ]);
 
 
-                while ($child_pages->have_posts()) {
+                while ($child_pages->have_posts()) :
                     $child_pages->the_post();
                     $image = get_field('slika', get_the_ID());
                     $serviceShortText = get_field('kratki_opis', get_the_ID());
                     ?>
 
                     <div class="col-xl-3 col-sm-6 col-xs-12">
-                        <a href="<?php the_permalink() ?>" class="gallery-item initFadeIn slower">
+                        <a href="<?php the_permalink() ?>" class="gallery-item" data-aos="fade-up">
                             <img src="<?= $image['url'] ?>"
                                  srcset="<?= wp_get_attachment_image_srcset($image['ID']) ?>"
                                  sizes="<?= wp_get_attachment_image_sizes($image['ID']) ?>"
@@ -43,7 +43,8 @@ while (have_posts()) {
                         </a>
                     </div>
 
-                <?php }
+                <?php
+                endwhile;
                 wp_reset_postdata(); //remember to reset data
                 ?>
 
@@ -51,8 +52,8 @@ while (have_posts()) {
         </div>
     </div>
 
-    <?php
-}
+<?php
+endwhile;
 
 get_footer();
 

@@ -249,7 +249,7 @@
         width: 100%;
         float: left;
         padding: 15px;
-        height: 210px;
+        height: 195px;
         overflow: hidden;
     }
 
@@ -272,11 +272,13 @@
     }
 
     .home-entry {
-        padding-bottom: 50px;
+        padding-top: 50px;
+        padding-bottom: 100px;
     }
 
     .home-heading-info {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
+        line-height: 1.5;
     }
 
     .home-heading-info-big {
@@ -290,8 +292,8 @@
     }
 
     .home-services {
-        padding-top: 30px;
-        padding-bottom: 20px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 
     .service-item {
@@ -361,17 +363,18 @@
     }
 
     .home-contact-block {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 
     .home-gallery {
-        padding-top: 20px;
-        padding-bottom: 30px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 
-    .contact-block-right {
-        padding: 30px 30px 5px 30px;
+    .home-contact-block .contact-block-right {
+        /*padding: 30px 30px 5px 30px;*/
+
     }
 }
 

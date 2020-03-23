@@ -4,7 +4,7 @@ get_header();
 
 $image = get_field('slika');
 
-while (have_posts()) {
+while (have_posts()) :
     the_post();
 
     ?>
@@ -21,10 +21,10 @@ while (have_posts()) {
 
                 <?php if ($image) : ?>
 
-                    <div class="col-md-6 initFadeInLeft">
+                    <div class="col-md-6" data-aos="fade-up-right">
                         <div class="text-big mb-50"><?php the_content(); ?></div>
                     </div>
-                    <div class="col-md-6 initSlideInRight">
+                    <div class="col-md-6" data-aos="fade-up-left">
                         <img class="img-responsive"
                              src="<?= $image['url'] ?>"
                              srcset="<?= wp_get_attachment_image_srcset($image['ID']) ?>"
@@ -33,7 +33,7 @@ while (have_posts()) {
 
                 <?php else: ?>
 
-                    <div class="col-md-12 initFadeIn slower">
+                    <div class="col-md-12" data-aos="fade-up">
                         <div class="text-big mb-50"><?php the_content(); ?></div>
                     </div>
 
@@ -43,9 +43,8 @@ while (have_posts()) {
         </div>
     </div>
 
-    <?php
-}
-
+<?php
+endwhile;
 
 get_footer();
 

@@ -9,7 +9,6 @@
 <div id="sidenav">
     <img src="<?= get_theme_mod('exclusive_transparent_neg_logo') ?>"
          alt="<?= get_bloginfo() . get_bloginfo('description') ?>"
-         class="animated slower"
          id="sidenav-logo"/>
     <div class="sidenav-menu">
         <?php exclusive_the_main_nav_links('sidenav-menu-item'); ?>
