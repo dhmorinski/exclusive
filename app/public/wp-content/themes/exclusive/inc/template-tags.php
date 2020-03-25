@@ -182,14 +182,14 @@ function exclusive_the_main_nav_links($classes)
  */
 function exclusive_the_page_header($page_title, array $breadcrumb_links)
 {
-    $html = '<section class="page-header mb-50">
+    $html = '<section class="page-header">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12">
                         <ul class="breadcrumb">';
 
     foreach ($breadcrumb_links as $label => $link) {
-        $html .= '<li><a href="' . $link . '">' . $label . '</a> / </li>';
+        $html .= '<li><a href="' . $link . '" title="' . get_bloginfo() . ' - ' . $label . '">' . $label . '</a> / </li>';
     }
 
     $html .= '              <li class="active">' . $page_title . '</li >            

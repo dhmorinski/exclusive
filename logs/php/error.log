@@ -1485,3 +1485,27 @@ Stack trace:
 [22-Mar-2020 15:47:53 UTC] PHP   4. include() C:\Users\denis\Local Sites\exclusive\app\public\wp-includes\template-loader.php:98
 [22-Mar-2020 15:47:53 UTC] PHP   5. the_content() C:\Users\denis\Local Sites\exclusive\app\public\wp-content\themes\exclusive\tpl-home.php:97
 [22-Mar-2020 15:47:53 UTC] PHP   6. get_the_content() C:\Users\denis\Local Sites\exclusive\app\public\wp-includes\post-template.php:244
+[24-Mar-2020 10:57:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function generate_cookie_notice() in C:\Users\denis\Local Sites\exclusive\app\public\wp-content\themes\exclusive\functions.php:27
+Stack trace:
+#0 C:\Users\denis\Local Sites\exclusive\app\public\wp-settings.php(497): include()
+#1 C:\Users\denis\Local Sites\exclusive\app\public\wp-config.php(78): require_once('C:\\Users\\denis\\...')
+#2 C:\Users\denis\Local Sites\exclusive\app\public\wp-load.php(37): require_once('C:\\Users\\denis\\...')
+#3 C:\Users\denis\Local Sites\exclusive\app\public\wp-blog-header.php(13): require_once('C:\\Users\\denis\\...')
+#4 C:\Users\denis\Local Sites\exclusive\app\public\index.php(17): require('C:\\Users\\denis\\...')
+#5 {main}
+  thrown in C:\Users\denis\Local Sites\exclusive\app\public\wp-content\themes\exclusive\functions.php on line 27
+[24-Mar-2020 10:57:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function generate_cookie_notice() in C:\Users\denis\Local Sites\exclusive\app\public\wp-content\themes\exclusive\functions.php:27
+Stack trace:
+#0 C:\Users\denis\Local Sites\exclusive\app\public\wp-settings.php(497): include()
+#1 C:\Users\denis\Local Sites\exclusive\app\public\wp-config.php(78): require_once('C:\\Users\\denis\\...')
+#2 C:\Users\denis\Local Sites\exclusive\app\public\wp-load.php(37): require_once('C:\\Users\\denis\\...')
+#3 C:\Users\denis\Local Sites\exclusive\app\public\wp-blog-header.php(13): require_once('C:\\Users\\denis\\...')
+#4 C:\Users\denis\Local Sites\exclusive\app\public\index.php(17): require('C:\\Users\\denis\\...')
+#5 {main}
+  thrown in C:\Users\denis\Local Sites\exclusive\app\public\wp-content\themes\exclusive\functions.php on line 27
+[24-Mar-2020 10:58:35 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\Users\denis\Local Sites\exclusive\app\public\wp-content\themes\exclusive\footer.php on line 36
+[24-Mar-2020 10:58:37 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in C:\Users\denis\Local Sites\exclusive\app\public\wp-content\themes\exclusive\footer.php on line 36
+[24-Mar-2020 13:51:20 UTC] PHP Parse error:  syntax error, unexpected '?' in C:\Users\denis\Local Sites\exclusive\app\public\wp-content\themes\exclusive\functions.php on line 115
+[24-Mar-2020 13:51:44 UTC] PHP Parse error:  syntax error, unexpected '?' in C:\Users\denis\Local Sites\exclusive\app\public\wp-content\themes\exclusive\functions.php on line 115
+[24-Mar-2020 13:51:45 UTC] PHP Parse error:  syntax error, unexpected '?' in C:\Users\denis\Local Sites\exclusive\app\public\wp-content\themes\exclusive\functions.php on line 115
+[24-Mar-2020 13:55:49 UTC] PHP Parse error:  syntax error, unexpected ''login_e' (T_ENCAPSED_AND_WHITESPACE) in C:\Users\denis\Local Sites\exclusive\app\public\wp-content\themes\exclusive\functions.php on line 124

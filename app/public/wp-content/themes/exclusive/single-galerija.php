@@ -15,14 +15,14 @@ while (have_posts()) :
     $gallery_image_ids = explode(',', $ids[1]);
     ?>
 
-    <div id="main">
+    <div id="main" class="mb-50">
         <!-- PAGE HEADER AND BREADCRUMBS -->
         <?php exclusive_the_page_header(get_the_title(), [
             'Naslovnica' => site_url(),
             'Galerija' => site_url('galerija'),
         ]) ?>
 
-        <div class="container-fluid">
+        <div class="container-fluid mt-50">
             <div class="row">
 
                 <?php if ($description) : ?>
@@ -45,6 +45,7 @@ while (have_posts()) :
                             <a href="<?= $image_url ?>"
                                data-fancybox--
                                data-caption="<?= $image_title ?>"
+                               title="<?= $image_title ?>"
                                class="gallery-item" data-aos="fade-up">
                                 <img class="img-responsive"
                                      src="<?= wp_get_attachment_image_url($image_id, 'medium') ?>"

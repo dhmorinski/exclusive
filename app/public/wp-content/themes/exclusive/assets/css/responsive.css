@@ -7,6 +7,13 @@
         display: inline-block;
     }
 
+    .img-single-page {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
     .banner-heading {
         background: #601860;
         float: left;
@@ -36,6 +43,16 @@
     .container-fluid {
         padding-left: 30px;
         padding-right: 30px;
+    }
+
+    .img-single-page {
+        float: left;
+        margin-right: 30px;
+        margin-bottom: 10px;
+    }
+
+    .content-single-page .home-heading, .content-single-page .text-big, .content-single-page .text-big * {
+        /*display: inline-block;*/
     }
 
     /*HOME BANNER*/
@@ -98,13 +115,10 @@
 }
 
 @media (max-width: 767px) {
+
     .custom-logo {
         height: 150px;
         width: auto;
-    }
-
-    .page-header-shadow {
-        margin-bottom: 20px;
     }
 
     label {
@@ -133,10 +147,8 @@
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-    .page-header {
-        background-size: auto auto, cover;
-        background: #800080;
-        /*background: linear-gradient(90deg, #800080 59%, #601860 1%, rgba(0, 0, 0, 0.5) 40%), url(http://exclusive.local/wp-content/uploads/2020/03/banner-1.jpg) no-repeat center;*/
+    .header-info-right a:hover, .header-info-left a:hover {
+        margin-bottom: 0;
     }
 
     .page-header h1 {
@@ -192,6 +204,16 @@
     }
 }
 
+@media (min-width: 991px) {
+    .contact-block .home-heading {
+        margin-top: 30px;
+    }
+
+    .contact-block .contact-block-right .home-heading {
+        margin-top: 0;
+    }
+}
+
 /*Medium and small devices (tablets, ipads, mobiles, 1024px and down)*/
 @media (max-width: 1024px) {
     ::-webkit-scrollbar {
@@ -204,6 +226,11 @@
 
     .menu a.nav-link {
         padding: 10px 10px;
+    }
+
+    .menu a.nav-link:hover {
+        padding-bottom: 15px;
+        padding-top: 5px;
     }
 
     #sidenav {
@@ -226,7 +253,7 @@
 
     .service-item {
         display: block;
-        box-shadow: 3px 3px 5px #aaa;
+        /*box-shadow: 3px 3px 5px #aaa;*/
     }
 
     .service-item-content h5 {
@@ -244,13 +271,15 @@
     }
 
     .service-item-content {
-        color: #666;
-        background: #fff;
         width: 100%;
         float: left;
         padding: 15px;
-        height: 195px;
+        height: 205px;
         overflow: hidden;
+    }
+
+    .home-services .service-item-content {
+        background: #fff;
     }
 
     .home-contact-block {
@@ -272,7 +301,7 @@
     }
 
     .home-entry {
-        padding-top: 50px;
+        padding-top: 100px;
         padding-bottom: 100px;
     }
 
@@ -297,8 +326,8 @@
     }
 
     .service-item {
-        box-shadow: 3px 3px 5px #aaa;
-        color: #eee;
+        /*box-shadow: 3px 3px 5px #aaa;*/
+        color: #800080;
         display: flex;
         height: 350px !important;
         position: relative;
@@ -306,7 +335,7 @@
     }
 
     .service-item-content {
-        background: rgba(96, 24, 96, 0.8);
+        background: #601860;
         height: 70px;
         position: absolute;
         bottom: 0;
@@ -316,6 +345,7 @@
     }
 
     .service-item-content h5 {
+        color: #fff;
         min-height: 70px;
         line-height: 1.7rem;
         padding-left: 10px;
@@ -325,7 +355,7 @@
 
     .service-item-content p {
         opacity: 0;
-        color: #666;
+        color: #333;
         padding-left: 15px;
         padding-right: 15px;
         line-height: 1.5;
@@ -372,8 +402,8 @@
         padding-bottom: 100px;
     }
 
-    .home-contact-block .contact-block-right {
-        /*padding: 30px 30px 5px 30px;*/
+    .contact-block .contact-block-right {
+        padding: 30px 30px 5px 30px;
 
     }
 }
@@ -382,6 +412,11 @@
 @media (min-width: 1281px) {
     .menu a.nav-link {
         padding: 20px 30px;
+    }
+
+    .menu a.nav-link:hover {
+        padding-bottom: 25px;
+        padding-top: 15px;
     }
 
     .sticky + #main {

@@ -5,13 +5,13 @@ get_header();
 while (have_posts()) :
     the_post(); ?>
 
-    <div id="main">
+    <div id="main" class="mb-50">
         <!-- PAGE HEADER AND BREADCRUMBS -->
         <?php exclusive_the_page_header(get_the_title(), [
             'Naslovnica' => site_url()
         ]) ?>
 
-        <div class="container-fluid">
+        <div class="container-fluid mt-50">
             <div class="row">
                 <div class="col-md-12">
                     <div class="text-big mb-50" data-aos="fade-in">

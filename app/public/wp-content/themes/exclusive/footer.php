@@ -20,7 +20,8 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="copyright-right">Izradio <a href="mailto:denishmorinski@gmail.com">Denis Hmorinski</a>
+                    <div class="copyright-right">Izradio <a href="mailto:denishmorinski@gmail.com"
+                                                            title="Denis Hmorinski">Denis Hmorinski</a>
                     </div>
                 </div>
             </div>

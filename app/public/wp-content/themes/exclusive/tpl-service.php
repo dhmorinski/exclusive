@@ -5,13 +5,13 @@ get_header();
 while (have_posts()) :
     the_post(); ?>
 
-    <div id="main">
+    <div id="main" class="mb-50">
         <!-- PAGE HEADER AND BREADCRUMBS -->
         <?php exclusive_the_page_header(get_the_title(), [
             'Naslovnica' => site_url()
         ]) ?>
 
-        <div class="container-fluid">
+        <div class="container-fluid mt-50">
             <div class="row">
                 <div class="col-md-12">
                     <div class="text-big mb-50" data-aos="fade-in">
@@ -29,10 +29,10 @@ while (have_posts()) :
                 while ($child_pages->have_posts()) :
                     $child_pages->the_post();
                     $image = get_field('slika', get_the_ID());
-                    $serviceShortText = get_field('kratki_opis', get_the_ID());
+                    $shortText = get_field('kratki_opis', get_the_ID());
                     ?>
 
-                    <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-xl-3 col-sm-6 col-xs-12">
                         <a href="<?php the_permalink() ?>" class="service-item" data-aos="fade-up">
                             <img src="<?= $image['url'] ?>"
                                  srcset="<?= wp_get_attachment_image_srcset($image['ID']) ?>"
@@ -40,7 +40,7 @@ while (have_posts()) :
                                  alt="<?php the_title() ?>"/>
                             <div class="service-item-content">
                                 <h5><?= get_the_title() ?></h5>
-                                <p><?= $serviceShortText ?></p>
+                                <p><?= $shortText ?></p>
                             </div>
                         </a>
                     </div>

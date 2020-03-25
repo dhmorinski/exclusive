@@ -2,31 +2,420 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21096bf3-7b61-42c1-8484-c37c50538965" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/wp-content/mu-plugins/local-by-flywheel-live-link-helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/assets/vendor/aos-2.3.1/css/aos.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/assets/vendor/aos-2.3.1/js/aos.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/assets/vendor/jquery-3.4.1/jquery-3.4.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/wp-content/uploads/resized/2a84eb93bdd0bd2ad3681b3acc5e1350/Slika-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/wp-content/uploads/resized/2a84eb93bdd0bd2ad3681b3acc5e1350/Slika-4.manifest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/wp-content/uploads/resized/af5e07ce09870d7f45467b1a02392d2b/Slika-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/wp-content/uploads/resized/af5e07ce09870d7f45467b1a02392d2b/Slika-2.manifest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/wp-content/uploads/resized/ebdbca4b009d9cd3a091890607bc25b7/Slika-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/public/wp-content/uploads/resized/ebdbca4b009d9cd3a091890607bc25b7/Slika-1.manifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/cookie-notice/cookie-notice.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/cookie-notice/css/admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/cookie-notice/css/admin.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/cookie-notice/css/front.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/cookie-notice/css/front.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/cookie-notice/images/logo-dfactory.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/cookie-notice/includes/functions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/cookie-notice/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/cookie-notice/js/admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/cookie-notice/js/admin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/cookie-notice/js/front.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/cookie-notice/js/front.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/cookie-notice/languages/cookie-notice.pot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/cookie-notice/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/admin/class-addon.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/admin/class-cap-control.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/admin/class-cap-section.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/admin/class-cap-tabs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/admin/class-manage-roles.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/admin/class-manage-users.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/admin/class-meta-box-content-permissions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/admin/class-meta-box-custom-cap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/admin/class-meta-box-publish-role.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/admin/class-role-edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/admin/class-role-list-table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/admin/class-role-new.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/admin/class-roles.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/admin/class-settings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/admin/class-user-edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/admin/class-user-new.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/admin/config/addons.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/admin/functions-addons.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/admin/functions-admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/admin/functions-help.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/admin/functions-settings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/admin/tmpl/cap-control.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/admin/tmpl/cap-section.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/admin/views/class-view-addons.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/admin/views/class-view-donate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/admin/views/class-view-general.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/admin/views/class-view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/changelog.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/contributing.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/css/admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/css/admin.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/img/icon-addon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/img/members-admin-access.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/img/members-block-permissions.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/img/members-core-create-caps.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/img/members-privacy-caps.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/img/members-role-hierarchy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/img/members-role-levels.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/img/members.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/inc/class-cap-group.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/inc/class-capability.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/inc/class-registry.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/inc/class-role-group.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/inc/class-role.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/inc/class-widget-login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/inc/class-widget-users.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/inc/functions-admin-bar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/inc/functions-cap-groups.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/inc/functions-capabilities.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/inc/functions-content-permissions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/inc/functions-deprecated.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/inc/functions-options.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/inc/functions-private-site.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/inc/functions-role-groups.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/inc/functions-roles.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/inc/functions-shortcodes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/inc/functions-users.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/inc/functions-widgets.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/inc/functions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/inc/template.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/js/edit-post.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/js/edit-post.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/js/edit-role.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/js/edit-role.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/js/settings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/js/settings.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/lang/members.pot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/license.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/members.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/screenshot-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/screenshot-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/screenshot-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/screenshot-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/screenshot-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/members/templates/comments.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/my-wp-login-logo/core/custom-js.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/my-wp-login-logo/core/custom-styles.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/my-wp-login-logo/css/images/color-chronicl.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/my-wp-login-logo/css/images/pattern-chronicl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/my-wp-login-logo/css/images/sprites.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/my-wp-login-logo/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/my-wp-login-logo/dc-custom-login-logo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/my-wp-login-logo/images/digitcodes-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/my-wp-login-logo/images/email.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/my-wp-login-logo/images/mylogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/my-wp-login-logo/images/plugin_header_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/my-wp-login-logo/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/my-wp-login-logo/uninstall.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/my-wp-login-logo/views/dashboard.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/my-wp-login-logo/views/faq.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/plugins/my-wp-login-logo/views/plugin-info.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/single-novosti.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/tpl-news.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/uploads/resized/c0b3bda8fcf10b0a57be668f29510e95/Slika-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/uploads/resized/c0b3bda8fcf10b0a57be668f29510e95/Slika-2.manifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/uploads/resized/e6b9929d59f2979c799387b30b7526ab/Slika-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/uploads/resized/e6b9929d59f2979c799387b30b7526ab/Slika-1.manifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/uploads/resized/ed1cfd8bfe3824ba04969d5e7c70e8a9/Slika-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/wp-content/uploads/resized/ed1cfd8bfe3824ba04969d5e7c70e8a9/Slika-4.manifest" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/assets/css/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/admin/class-cf7-grid-layout-admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/admin/css/cf7-grid-layout-admin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/admin/css/cf7-grid-layout-post.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/admin/css/cf7sg-benchmark-tag.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/admin/css/cf7sg-dynamic-tag.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/admin/css/image/code-sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/admin/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/admin/js/cf7-benchmark-tag.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/admin/js/cf7-grid-codemirror.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/admin/js/cf7-grid-layout-admin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/admin/js/cf7sg-dynamic-tag.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/admin/js/cf7sg-pointers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/admin/partials/cf7-admin-editor-display.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/admin/partials/cf7-benchmark-tag.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/admin/partials/cf7-default-form.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/admin/partials/cf7-dynamic-tag-display.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/admin/partials/cf7-grid-layout-admin-display.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/admin/partials/cf7-helper-metabox-display.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/admin/partials/cf7-info-metabox-display.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/admin/partials/helpers/cf7sg-form-fields.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/admin/partials/helpers/cf7sg-post-form-submit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/admin/partials/helpers/cf7sg-pre-form-load.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/admin/partials/pointers/cf7sg-pointer-editor-column-control.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/admin/partials/pointers/cf7sg-pointer-editor-full-screen.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/admin/partials/pointers/cf7sg-pointer-editor-rows-control.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/admin/partials/pointers/cf7sg-pointer-editor-tabs.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/admin/partials/pointers/cf7sg-pointer-shortcodes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/admin/partials/pointers/cf7sg-pointer-tag-benchmark.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/admin/partials/pointers/cf7sg-pointer-tag-dynamic-dropdown.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/admin/partials/pointers/cf7sg-pointer-update-forms.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/beautify/beautify-html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/beautify/beautify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/cf7-admin-table/admin/cf7-post-admin-table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/cf7-admin-table/admin/css/cf7-admin-table.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/cf7-admin-table/admin/js/cf7-post-table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/cf7-admin-table/cf7-admin-table-loader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/class-execution-time.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/clipboard/clipboard.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/comment/comment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/comment/continuecomment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/dialog/dialog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/dialog/dialog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/display/autorefresh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/display/fullscreen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/display/fullscreen.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/display/panel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/display/placeholder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/display/rulers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/edit/closebrackets.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/edit/closetag.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/edit/continuelist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/edit/matchbrackets.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/edit/matchtags.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/edit/trailingspace.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/fold/brace-fold.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/fold/comment-fold.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/fold/foldcode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/fold/foldgutter.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/fold/foldgutter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/fold/indent-fold.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/fold/markdown-fold.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/fold/xml-fold.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/hint/anyword-hint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/hint/css-hint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/hint/html-hint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/hint/javascript-hint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/hint/show-hint.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/hint/show-hint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/hint/sql-hint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/hint/xml-hint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/indent/parsexml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/lint/coffeescript-lint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/lint/css-lint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/lint/html-lint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/lint/javascript-lint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/lint/json-lint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/lint/lint.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/lint/lint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/lint/yaml-lint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/merge/merge.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/merge/merge.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/mode/loadmode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/mode/multiplex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/mode/multiplex_test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/mode/overlay.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/mode/simple.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/runmode/colorize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/runmode/runmode-standalone.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/runmode/runmode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/runmode/runmode.node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/scroll/annotatescrollbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/scroll/scrollpastend.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/scroll/simplescrollbars.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/scroll/simplescrollbars.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/search/jump-to-line.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/search/match-highlighter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/search/matchesonscrollbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/search/matchesonscrollbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/search/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/search/searchcursor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/selection/active-line.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/selection/mark-selection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/selection/selection-pointer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/tern/tern.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/tern/tern.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/tern/worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/addon/wrap/hardwrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/codemirror.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/codemirror.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/mode/css/css.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/mode/css/gss.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/mode/css/gss_test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/mode/css/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/mode/css/less.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/mode/css/less_test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/mode/css/scss.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/mode/css/scss_test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/mode/css/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/mode/htmlmixed/htmlmixed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/mode/htmlmixed/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/mode/javascript/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/mode/javascript/javascript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/mode/javascript/json-ld.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/mode/javascript/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/mode/javascript/typescript.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/mode/xml/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/mode/xml/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/mode/xml/xml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/theme/eclipse.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/theme/paraiso-light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/v.5.24.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/codemirror/v.5.32.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/css.gs/css-smart-grid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/css.gs/demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/css.gs/demo_files/docs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/css.gs/demo_files/fonts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/css.gs/demo_files/ga.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/css.gs/demo_files/modernizr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/css.gs/demo_files/track.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/css.gs/smart-grid.admin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/css.gs/smart-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/css.gs/smart-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/css.gs/wordpress-bg-medblue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-nice-select/css/nice-select.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-nice-select/css/nice-select.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-nice-select/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-nice-select/js/fastclick.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-nice-select/js/jquery.nice-select.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-nice-select/js/jquery.nice-select.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-nice-select/js/prism.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-toggles/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-toggles/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-toggles/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-toggles/css/themes/toggles-all.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-toggles/css/themes/toggles-dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-toggles/css/themes/toggles-iphone.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-toggles/css/themes/toggles-light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-toggles/css/themes/toggles-light.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-toggles/css/themes/toggles-modern.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-toggles/css/themes/toggles-soft.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-toggles/css/toggles-full.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-toggles/css/toggles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-toggles/css/toggles.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-toggles/js/Toggles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-toggles/js/wrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-toggles/less/themes/toggles-dark.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-toggles/less/themes/toggles-iphone.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-toggles/less/themes/toggles-light.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-toggles/less/themes/toggles-modern.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-toggles/less/themes/toggles-soft.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-toggles/less/toggles.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-toggles/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-toggles/toggles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-toggles/toggles.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-ui/AUTHORS.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-ui/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-ui/images/ui-bg_glass_55_fbf9ee_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-ui/images/ui-bg_glass_65_ffffff_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-ui/images/ui-bg_glass_75_dadada_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-ui/images/ui-bg_glass_75_e6e6e6_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-ui/images/ui-bg_glass_95_fef1ec_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-ui/images/ui-bg_highlight-soft_15_ffffff_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-ui/images/ui-icons_222222_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-ui/images/ui-icons_2e83ff_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-ui/images/ui-icons_454545_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-ui/images/ui-icons_888888_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-ui/images/ui-icons_cd0a0a_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-ui/jquery-ui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-ui/jquery-ui.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-ui/jquery-ui.structure.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-ui/jquery-ui.structure.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-ui/jquery-ui.theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-ui/jquery-ui.theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/jquery-ui/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/php-query/phpQuery.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/css/select2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/css/select2.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/css/select2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/az.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/eu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/hi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/hy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/is.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/km.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/ms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/pt-BR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/sl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/sr-Cyrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/sr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/zh-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/i18n/zh-TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/select2.full.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/select2.full.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/select2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/js/select2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/assets/select2/select2-v4.0.4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/cf7-grid-layout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/changelog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/includes/class-cf7-grid-layout-activator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/includes/class-cf7-grid-layout-deactivator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/includes/class-cf7-grid-layout-i18n.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/includes/class-cf7-grid-layout-loader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/includes/class-cf7-grid-layout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/includes/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/includes/wordpress-gurus-debug-api.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/languages/cf7-grid-layout-en.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/languages/cf7-grid-layout-en.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/languages/cf7-grid-layout-en_GB.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/languages/cf7-grid-layout-en_GB.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/languages/cf7-grid-layout-es_ES.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/languages/cf7-grid-layout-fr_FR.mo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/languages/cf7-grid-layout-fr_FR.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/languages/cf7-grid-layout.pot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/public/class-cf7-grid-layout-public.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/public/css/cf7-benchmark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/public/css/cf7-grid-layout-public.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/public/css/min/cf7-benchmark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/public/css/min/cf7-grid-layout-public.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/public/css/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/public/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/public/js/cf7-benchmark.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/public/js/cf7-grid-layout-public.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/public/js/min/cf7-benchmark.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/public/js/min/cf7-grid-layout-public.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/public/partials/cf7-benchmark-tag.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/public/partials/cf7-taxonomy-tag-display.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/public/partials/cf7sg-field-load-script.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/plugins/cf7-grid-layout/uninstall.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/assets/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/assets/css/responsive.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/assets/js/exclusive.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/assets/js/exclusive.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/assets/js/whenInViewport.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/assets/vendor/jquery-3.4.1/jquery-3.4.1.min.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/inc/template-tags.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/inc/template-tags.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/page_1.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/page_1.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/single-galerija.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/single-galerija.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/single-ponuda.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/single-ponuda.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/single_1.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/single_1.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/tpl-about-us.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/tpl-about-us.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/tpl-contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/tpl-contact.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/tpl-gallery.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/tpl-gallery.php" afterDir="false" />
@@ -34,6 +423,7 @@
       <change beforePath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/tpl-service.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/wp-content/themes/exclusive/tpl-service.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/sql/local.sql" beforeDir="false" afterPath="$PROJECT_DIR$/app/sql/local.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/nginx/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/nginx/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/php/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/php/error.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,11 +457,11 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\denis\Local Sites\exclusive\app\public\wp-content\themes\exclusive\assets\vendor\aos-2.3.1\js" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\denis\Local Sites\exclusive\app\public\wp-content\themes\exclusive" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\denis\Local Sites\exclusive\app\public\wp-content\themes\exclusive\assets\vendor\aos-2.3.1\js" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -95,7 +485,13 @@
       <workItem from="1584873109748" duration="162000" />
       <workItem from="1584873531622" duration="40000" />
       <workItem from="1584873636821" duration="27332000" />
-      <workItem from="1584974014941" duration="6914000" />
+      <workItem from="1584974014941" duration="15569000" />
+      <workItem from="1584998985558" duration="675000" />
+      <workItem from="1585004195085" duration="1135000" />
+      <workItem from="1585039104555" duration="3277000" />
+      <workItem from="1585047311280" duration="604000" />
+      <workItem from="1585057783029" duration="14683000" />
+      <workItem from="1585148850559" duration="2909000" />
     </task>
     <servers />
   </component>
@@ -118,18 +514,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="279" y="58" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1584874066656" />
+    <state x="490" y="154" width="540" height="540" key="StructurePopup" timestamp="1585040173124">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="490" y="154" width="540" height="540" key="StructurePopup/0.0.1536.824@0.0.1536.824" timestamp="1585040173124" />
     <state x="477" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1584873113003">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="477" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1584873113003" />
-    <state x="452" y="0" width="761" height="824" key="find.popup" timestamp="1584982087976">
+    <state x="452" y="0" width="761" height="824" key="find.popup" timestamp="1585060559414">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="452" y="0" width="761" height="824" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1584982087976" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1584900942870">
+    <state x="452" y="0" width="761" height="824" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1585060559414" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1585047336821">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1584900942870" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1585047336821" />
   </component>
   <component name="WordPressConfiguration" doNotAskAgain="true" />
 </project>

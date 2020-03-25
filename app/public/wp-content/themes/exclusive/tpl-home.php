@@ -58,9 +58,11 @@ while (have_posts()) :
 
                         <?php if (!$entry_image) : ?>
 
-                            <div class="col-xs-12 text-big" data-aos="fade-up">
+                            <div class="col-xs-12 text-big"
+                                 data-aos="fade-up">
                                 <h2 class="home-heading">
-                                    <a href="<?= site_url($entry_link) ?>"><?= $entry_title ?></a></h2>
+                                    <a href="<?= site_url($entry_link) ?>"><?= $entry_title ?></a>
+                                </h2>
 
                                 <?php if ($entry_text) {
                                     echo $entry_text;
@@ -70,15 +72,20 @@ while (have_posts()) :
 
                         <?php else: ?>
                             <div class="col-lg-8 col-md-6 col-sm-12 text-big">
-                                <h2 class="home-heading" data-aos="fade-up-right">
-                                    <a href="<?= site_url($entry_link) ?>"><?= $entry_title ?></a></h2>
+                                <h2 class="home-heading"
+                                    data-aos="fade-up-right">
+                                    <a href="<?= site_url($entry_link) ?>"><?= $entry_title ?></a>
+                                </h2>
 
                                 <?php if ($entry_text) : ?>
-                                    <div data-aos="fade-up-right" data-aos-delay="500"><?= $entry_text ?></div>
+                                    <div data-aos="fade-up-right"
+                                         data-aos-delay="500"><?= $entry_text ?>
+                                    </div>
                                 <?php endif; ?>
 
                             </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up-left">
+                            <div class="col-lg-4 col-md-6 col-sm-12"
+                                 data-aos="fade-up-left">
                                 <img src="<?= $entry_image['url'] ?>"
                                      srcset="<?= wp_get_attachment_image_srcset($entry_image['ID']) ?>"
                                      sizes="<?= wp_get_attachment_image_sizes($entry_image['ID']) ?>"
@@ -91,8 +98,8 @@ while (have_posts()) :
                         // HOMEPAGE CONTENT
                         if (get_the_content_feed()) : ?>
 
-                            <div class="col-md-12 mb-50" data-aos="fade-up">
-                                <?php the_content(); ?>
+                            <div class="col-md-12 mb-50"
+                                 data-aos="fade-up"><?php the_content(); ?>
                             </div>
 
                         <?php endif; ?>
@@ -113,14 +120,16 @@ while (have_posts()) :
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-8 offset-md-2">
-                            <h2 class="home-heading" data-aos="fade-up">
+                            <h2 class="home-heading"
+                                data-aos="fade-up">
                                 <a href="<?= get_permalink($service_page) ?>"><?= $service_page->post_title ?></a>
                             </h2>
 
                             <?php if ($service_page->post_content) : ?>
 
                                 <div class="home-heading-info"
-                                     data-aos="fade-up"><?= $service_page->post_excerpt ?></div>
+                                     data-aos="fade-up"><?= $service_page->post_excerpt ?>
+                                </div>
 
                             <?php endif; ?>
                         </div>
@@ -130,7 +139,8 @@ while (have_posts()) :
                             $short_text = get_field('kratki_opis', $value->ID); ?>
 
                             <div class="col-xl-3 col-sm-6 col-xs-12">
-                                <a href="<?php the_permalink($value->ID) ?>" class="service-item"
+                                <a href="<?php the_permalink($value->ID) ?>"
+                                   class="service-item"
                                    data-aos="fade-up">
                                     <img src="<?= $image['url'] ?>"
                                          srcset="<?= wp_get_attachment_image_srcset($image['ID']) ?>"
@@ -141,7 +151,6 @@ while (have_posts()) :
                                     </div>
                                 </a>
                             </div>
-
                         <?php endforeach; ?>
 
                     </div>
@@ -165,7 +174,8 @@ while (have_posts()) :
                             <?php if ($service_page->post_content) : ?>
 
                                 <div class="home-heading-info"
-                                     data-aos="fade-up"><?= $gallery_page->post_excerpt ?></div>
+                                     data-aos="fade-up"><?= $gallery_page->post_excerpt ?>
+                                </div>
 
                             <?php endif; ?>
                         </div>
@@ -213,48 +223,52 @@ while (have_posts()) :
                             ($second_action_title || $second_action_content)
                         ): ?>
 
-                            <div class="col-md-4">
+                            <div class="col-lg-4 col-md-6">
 
                                 <!-- FIRST ACTION -->
                                 <?php
                                 if ($first_action_title) : ?>
-                                    <h2 class="home-heading" data-aos="fade-right"><?= $first_action_title ?></h2>
+                                    <h2 class="home-heading"
+                                        data-aos="fade-right"><?= $first_action_title ?>
+                                    </h2>
                                 <?php
                                 endif;
                                 if ($first_action_content) :
                                     ?>
-                                    <div class="home-heading-info-big" data-aos="fade-right">
-                                        <?= $first_action_content ?>
+                                    <div class="home-heading-info-big"
+                                         data-aos="fade-right"><?= $first_action_content ?>
                                     </div>
                                 <?php
                                 endif;
                                 if ($first_action_nav) :
                                     ?>
-                                    <div data-aos="zoom-in" data-aos-delay="700">
-                                        <?php exclusive_the_nav_links($first_action_nav, 'btn btn-primary', true, true); ?>
+                                    <div data-aos="zoom-in"
+                                         data-aos-delay="500"><?php exclusive_the_nav_links($first_action_nav, 'btn btn-primary', true, true); ?>
                                     </div>
                                 <?php
                                 endif;
                                 ?>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-lg-4 col-md-6">
                                 <!-- SECOND ACTION -->
                                 <?php
                                 if ($second_action_title) : ?>
-                                    <h2 class="home-heading" data-aos="fade-right"><?= $second_action_title ?></h2>
+                                    <h2 class="home-heading"
+                                        data-aos="fade-right"><?= $second_action_title ?>
+                                    </h2>
                                 <?php
                                 endif;
                                 if ($second_action_content) :
                                     ?>
-                                    <div class="home-heading-info-big" data-aos="fade-right">
-                                        <?= $second_action_content ?>
+                                    <div class="home-heading-info-big"
+                                         data-aos="fade-right"><?= $second_action_content ?>
                                     </div>
                                 <?php
                                 endif;
                                 if ($second_action_nav) :
                                     ?>
-                                    <div data-aos="zoom-in" data-aos-delay="700">
-                                        <?php exclusive_the_nav_links($second_action_nav, 'btn btn-primary', false, true); ?>
+                                    <div data-aos="zoom-in"
+                                         data-aos-delay="500"><?php exclusive_the_nav_links($second_action_nav, 'btn btn-primary', false, true); ?>
                                     </div>
                                 <?php
                                 endif;
@@ -267,8 +281,9 @@ while (have_posts()) :
                         if ($form_id) :
                             ?>
                             <!-- CONTACT FORM -->
-                            <div class="col-md-4" data-aos="fade-up-left">
-                                <div class="contact-block-right contact-form-wrap">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="contact-block-right contact-form-wrap"
+                                     data-aos="fade-up-left">
 
                                     <?php if ($form_title) : ?>
                                         <h2 class="home-heading"><?= $form_title ?></h2>

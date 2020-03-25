@@ -1,19 +1,18 @@
-@font-face {
-    font-family: 'Oswald-Regular';
-    src: local('Oswald'), url('../fonts/oswald/static/Oswald-Regular.ttf');
-    font-display: swap;
-}
-
 html {
     scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
-    font-family: 'Oswald-Regular', 'Arial', monospace;
-    color: #666;
+    /*font-family: 'Open Sans', 'Arial', sans-serif;*/
+    font-family: 'Oswald', 'Arial', sans-serif;
+    color: #333;
     overflow-x: hidden !important;
     max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
 }
 
 #body {
@@ -28,11 +27,26 @@ p {
     margin-bottom: 50px !important;
 }
 
+.mt-50 {
+    margin-top: 50px !important;
+}
+
 #main {
     clear: both;
     overflow: hidden;
     /*transition: all .5s ease-in-out;*/
     animation-fill-mode: both;
+}
+
+.bg-gray {
+    background: #eee;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.bg-white {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 /*CUSTOM ELEMENTS*/
@@ -58,11 +72,9 @@ p {
 
 .page-header .breadcrumb li a {
     color: #fff;
-    text-shadow: 1px 1px 3px #666;
 }
 
 .page-header .breadcrumb li {
-    text-shadow: 1px 1px 3px #666;
     color: #ddd;
     display: inline;
 }
@@ -71,7 +83,6 @@ p {
     color: #fff;
     font-size: 35px;
     margin: 20px 0 30px;
-    text-shadow: 1px 1px 3px #666;
 }
 
 .breadcrumb {
@@ -122,7 +133,7 @@ p {
 
 /*LINKS AND BUTTONS*/
 a {
-    color: #666;
+    color: #333;
     text-decoration: none;
     transition: color .3s;
 }
@@ -194,6 +205,11 @@ a {
     line-height: 1.5;
 }
 
+.btn-single-page {
+    float: right;
+    margin-top: 30px;
+}
+
 /*FORM ELEMENTS*/
 label {
     display: inline-block;
@@ -230,12 +246,12 @@ textarea {
     resize: vertical;
 }
 
-form {
-    display: block;
-    margin-top: 0;
+/*Contact form 7 style overwrite*/
+.contact-form-wrap form {
+    display: inline-block;
+    width: 100%;
 }
 
-/*Contact form 7 style overwrite*/
 .contact-form-wrap ol {
     list-style: none;
     padding: 0;
@@ -257,21 +273,21 @@ form {
 }
 
 .contact-form-wrap .wpcf7-validation-errors {
-    padding: .5rem;
-    margin: 0;
-    border-radius: 2px;
-    border: 1px solid #eee;
+    margin-top: 0;
     color: #dc3545;
-    background-color: #fff;
+    padding: 0;
+    border: none;
+}
+
+.contact-form-wrap form p:last-of-type {
+    margin: 0;
 }
 
 .contact-form-wrap .wpcf7-mail-sent-ok {
-    padding: .5rem;
-    margin: 0;
-    border-radius: 2px;
-    border: 1px solid #eee;
+    padding: 0;
+    margin-top: 0;
+    border: none;
     color: #008000;
-    background-color: #fff;
 }
 
 .wpcf7-not-valid-tip {
@@ -290,7 +306,6 @@ form {
 }
 
 .home-heading {
-    font-weight: bold;
     margin-top: 0;
     margin-bottom: 20px;
 }
@@ -307,7 +322,6 @@ header {
 
 .header-info {
     padding: 10px 15px;
-    color: #929292;
     clear: both;
 }
 
@@ -316,16 +330,20 @@ header {
 }
 
 .header-info-left a {
-    color: #999;
+    color: #666;
     padding: 5px;
+    margin-bottom: 5px;
+    transition: margin .3s ease-in-out, color .3s ease-in-out;
 }
 
 .header-info-left a:hover {
-    color: #666;
+    color: #333;
 }
 
 .header-info-right a {
+    margin-bottom: 5px;
     margin-left: 10px;
+    transition: margin .3s ease-in-out;
 }
 
 .header-info-right {
@@ -348,10 +366,15 @@ nav.main-nav {
     margin-top: auto;
     margin-bottom: auto;
     color: #fff;
+    transition: color .3s ease-in-out, background-color .3s ease-in-out, padding .3s ease-in-out;
 }
 
-.menu a.nav-link:hover, .menu a.nav-link.active {
+.menu a.nav-link.active {
     background: #800080;
+}
+
+.menu a.nav-link:hover {
+    background: #720072;
 }
 
 .custom-logo {
@@ -389,7 +412,7 @@ nav.main-nav {
     transition: .5s ease-in-out;
 }
 
-.sidenav-menu-item:first-child {
+.sidenav-menu {
     border-top: 1px solid #555;
 }
 
@@ -565,6 +588,11 @@ nav.main-nav {
     overflow: hidden;
     margin-bottom: 15px;
     border-radius: 2px;
+    border: 3px solid #ddd;
+}
+
+.home-services .service-item {
+    border: 3px solid #fff;
 }
 
 .service-item-content {
@@ -588,16 +616,25 @@ nav.main-nav {
 .contact-block a {
     margin-bottom: 30px;
     margin-right: 10px;
+    transition: margin .3s ease-in-out;
 }
 
-.home-contact-block .contact-block-right {
-    background: #fff;
+.contact-block a:hover {
+    margin-bottom: 25px;
+    margin-top: 5px;
+}
+
+.contact-block-right {
+    background: #ddd;
     padding: 15px 15px 0 15px;
     border-radius: 2px;
 }
 
+.home-contact-block .contact-block-right {
+    background: #fff;
+}
+
 .contact-block-right h2 {
-    font-size: 2rem;
     margin-bottom: 20px;
 }
 
@@ -609,7 +646,7 @@ nav.main-nav {
     margin-bottom: 30px;
     position: relative;
     border-radius: 2px;
-    box-shadow: 3px 3px 5px #666;
+    /*box-shadow: 3px 3px 5px #666;*/
 }
 
 .gallery-item-title {

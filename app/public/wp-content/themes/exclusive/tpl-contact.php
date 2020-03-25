@@ -17,7 +17,8 @@ while (have_posts()) :
 
     ?>
 
-    <div id="main">
+    <div id="main"
+         class="mb-50">
         <!-- PAGE HEADER AND BREADCRUMBS -->
         <?php exclusive_the_page_header(get_the_title(), [
             'Naslovnica' => site_url()
@@ -25,10 +26,11 @@ while (have_posts()) :
 
         <?php if (get_the_content()) : ?>
 
-            <div class="container-fluid">
+            <div class="container-fluid mt-50">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="text-big mb-50" data-aos="fade-in">
+                        <div class="text-big mb-50"
+                             data-aos="fade-in">
                             <?php the_content(); ?>
                         </div>
                     </div>
@@ -37,7 +39,7 @@ while (have_posts()) :
 
         <?php endif; ?>
 
-        <div class="contact-block container-fluid mb-50">
+        <div class="contact-block container-fluid">
             <div class="row">
 
                 <?php if (
@@ -45,47 +47,57 @@ while (have_posts()) :
                     ($second_action_title || $second_action_content)
                 ): ?>
 
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-6">
 
                         <!-- FIRST ACTION -->
                         <?php
                         if ($first_action_title) : ?>
-                            <h2 class="home-heading" data-aos="fade-right"><?= $first_action_title ?></h2>
+                            <h2 class="home-heading"
+                                data-aos="fade-right">
+                                <?= $first_action_title ?>
+                            </h2>
                         <?php
                         endif;
                         if ($first_action_content) :
                             ?>
-                            <div class="home-heading-info-big" data-aos="fade-right">
+                            <div class="home-heading-info-big"
+                                 data-aos="fade-right">
                                 <?= $first_action_content ?>
                             </div>
                         <?php
                         endif;
                         if ($first_action_nav) :
                             ?>
-                            <div data-aos="zoom-in" data-aos-delay="700">
+                            <div data-aos="zoom-in"
+                                 data-aos-delay="500">
                                 <?php exclusive_the_nav_links($first_action_nav, 'btn btn-primary', true, true); ?>
                             </div>
                         <?php
                         endif;
                         ?>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-6">
                         <!-- SECOND ACTION -->
                         <?php
                         if ($second_action_title) : ?>
-                            <h2 class="home-heading" data-aos="fade-right"><?= $second_action_title ?></h2>
+                            <h2 class="home-heading"
+                                data-aos="fade-right">
+                                <?= $second_action_title ?>
+                            </h2>
                         <?php
                         endif;
                         if ($second_action_content) :
                             ?>
-                            <div class="home-heading-info-big" data-aos="fade-right">
+                            <div class="home-heading-info-big"
+                                 data-aos="fade-right">
                                 <?= $second_action_content ?>
                             </div>
                         <?php
                         endif;
                         if ($second_action_nav) :
                             ?>
-                            <div data-aos="zoom-in" data-aos-delay="700">
+                            <div data-aos="zoom-in"
+                                 data-aos-delay="500">
                                 <?php exclusive_the_nav_links($second_action_nav, 'btn btn-primary', false, true); ?>
                             </div>
                         <?php
@@ -99,8 +111,8 @@ while (have_posts()) :
                 if ($form_id) :
                     ?>
                     <!-- CONTACT FORM -->
-                    <div class="col-md-4" data-aos="fade-up-left">
-                        <div class="contact-block-right contact-form-wrap">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="contact-block-right contact-form-wrap" data-aos="fade-up-left">
 
                             <?php if ($form_title) : ?>
                                 <h2 class="home-heading"><?= $form_title ?></h2>
